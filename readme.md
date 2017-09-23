@@ -19,7 +19,7 @@ browser <-----> lb <-----> nginx
 -----------------nginx conf example---------
 
 lua_shared_dict dogs 10m;
-init_by_lua_file conf/conf.d/init.lua; 
+init_by_lua_file conf/conf.d/init.lua;
 lua_package_path '/home/webuser/www/module/?.lua;;';
 server {
         listen       80;
