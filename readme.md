@@ -4,6 +4,12 @@ a nginx lua waf
 2.设置黑白名单
 3.log记录
 
+
+适用环境:
+browser <-----> lb <-----> nginx
+        
+
+
 -----------------file list-----------------
 >init.lua  --黑白名单配置&函数
 >limit.lua  --防御逻辑
