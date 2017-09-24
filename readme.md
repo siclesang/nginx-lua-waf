@@ -29,7 +29,6 @@ server {
 	set $interval 60; 
 	#单位时间请求阀值
 	set $reqs_interval 3;
-	
 	access_by_lua_file conf/conf.d/limit.lua;
 	lua_code_cache off;
 	root /home/webuser/www/views;
